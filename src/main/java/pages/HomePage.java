@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Objects;
+
 public class HomePage {
     private WebDriver driver;
 
@@ -51,10 +53,18 @@ public class HomePage {
         removeFromCart.click();
     }
 
-    public void filterItems(){
+    public void filterItems(String filterChoice){
         filter.click();
-        filter.sendKeys(Keys.DOWN);
-        filter.sendKeys(Keys.DOWN);
+        if (Objects.equals(filterChoice, "Name (Z to A)")) {
+            filter.sendKeys(Keys.DOWN);
+        } else if (Objects.equals(filterChoice, "Price (low to high)")) {
+            filter.sendKeys(Keys.DOWN);
+            filter.sendKeys(Keys.DOWN);
+        } else if (Objects.equals(filterChoice, "Price (high to low)")) {
+            filter.sendKeys(Keys.DOWN);
+            filter.sendKeys(Keys.DOWN);
+            filter.sendKeys(Keys.DOWN);
+        }
         filter.sendKeys(Keys.ENTER);
     }
     public void clickCartIcon(){

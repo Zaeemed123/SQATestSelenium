@@ -15,7 +15,7 @@ Feature: Home Page Feature
   @filterItems
   Scenario: Filter Products
     Given User is on Home Page
-    And User selects the filter to filter the items
+    And User selects the filter "Price (low to high)" to filter the items
 
   @logout
   Scenario: Logout the logged in user from the website

@@ -31,9 +31,9 @@ public class homePageStepDefinitions {
         homePage.removeFromCart();
     }
 
-    @Then("User selects the filter to filter the items")
-    public static void filter(){
-        homePage.filterItems();
+    @Then("User selects the filter {string} to filter the items")
+    public static void filter(String filter){
+        homePage.filterItems(filter);
     }
 
     @Then("User clicks on cart icon")
