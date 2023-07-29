@@ -29,7 +29,7 @@ Following are the test cases covered in the project
 7. **Complete the checkout flow**
 8. **Logout the user**
 
-### How to run the above test cases
+## How to run the above test cases
 You can run the above test cases individually by replacing the value of tags in the **Test Runner** file
 1. @successfulLogin
 2. @failedLogin
@@ -39,3 +39,6 @@ You can run the above test cases individually by replacing the value of tags in 
 6. @checkoutCart
 7. @completeCheckout
 8. @logout
+
+## Tutorial to run the project and generate report
+https://app.screencast.com/5x3abJk1UTLzW
