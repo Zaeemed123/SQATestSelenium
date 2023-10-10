@@ -1,5 +1,5 @@
 Feature: Login the website
-  @successfulLogin @addToCart @removeFromCart @filterItems @checkoutCart @completeCheckout @logout
+  @successfulLogin @addToCart @removeFromCart @filterItems @checkoutCart @completeCheckout @openSauceLab
   Scenario: Successful login to the website
     Given User is on login page
     When he enters the username "standard_user" and password "secret_sauce"

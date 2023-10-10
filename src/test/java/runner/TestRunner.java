@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
                 "junit:target/cucumber/reports.xml",
                 "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"
         },
-        tags = "@completeCheckout"
+        tags = "@openSauceLab"
 )
 public class TestRunner {
 }

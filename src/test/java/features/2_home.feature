@@ -4,7 +4,8 @@ Feature: Home Page Feature
     Given User is on Home Page
     And User clicks on add to cart to add item to cart
     And User clicks on cart icon
-    Then the user is redirected to the cart screen
+    Then User is on Cart Page
+    And user verifies the product is present in cart
 
   @removeFromCart
   Scenario: Remove Item(s) From Cart
@@ -23,3 +24,10 @@ Feature: Home Page Feature
     Then user clicks on side bar icon
     And User clicks on Logout button
     Then user is redirected to login screen
+
+  @openSauceLab
+  Scenario: User scrolls the website and clicks on the linkedin icon to view linkedin page
+    Given User is on Home Page
+    And user scrolls the page to the bottom
+    And user clicks on the "linkedin" icon
+    Then user is redirected to the "linkedin" website
